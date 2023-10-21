@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Darkmode con Javascript</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<input type="checkbox" id="evento-click">
+    <label for="evento-click" class="Mega__boton">
+		<nav class="nav_conte">
+			<a class="logotipo" href="#">DoctorApp</a>
+			<div class="enlaces">
+				<a href="#">Inicio</a>
+				<a href="#">Galeria</a>
+				<a href="#">Contacto</a>
+				<button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+			</div>
+		</nav>
+		<div class="contenedor">
+			<section>
+				<h1 class="titulos">Doctores populares</h1>
+				<div class="container__populares">
+					<input type="radio" name="dot" id="one" />
+					<input type="radio" name="dot" id="two" />
+					<div class="main_catrtas_popular">
+						<div class="cartas_popular">
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel1.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Mia Khalifa</div>
+										<div class="especialidad_popular">Cardiologa</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel2.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Lana Rhoades</div>
+										<div class="especialidad_popular">Pediatra</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel3.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Giselle Montes</div>
+										<div class="especialidad_popular">Cirujana</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cartas_popular">
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel4.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Abella Danger</div>
+										<div class="especialidad_popular">Nutricionista</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel5.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Eva Elfie</div>
+										<div class="especialidad_popular">Radiología</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="carta_popular">
+								<div class="contenido_popular">
+									<div class="img_popular">
+										<img src="Img/carrucel6.webp" alt="" />
+									</div>
+									<div class="detalles_popular">
+										<div class="nombre_popular">Angela White</div>
+										<div class="especialidad_popular">Dermatología</div>
+									</div>
+									<div class="media_icons_popular">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="#"><i class="fab fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button_popular">
+					  <label for="one" class="active one"></label>
+					  <label for="two" class="two"></label>
+					</div>
+				</div>
+			</section>
+			
+			<section>
+				<h1 class="titulos">hospitales destacados</h1>
+				<section class="grid">
+					<div class="card">
+						<img src="img/1.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/2.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/3.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/4.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/5.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/6.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h1 class="titulos">Seccion infomativa</h1>
+				<section class="grid">
+					<div class="targets">
+						<div class="face front">
+							<img src="img/informacion1.jpg" alt="">
+							<h3>anorexia</h3>
+						</div>
+						<div class="face back">
+							<h3>anorexia</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+							<div class="link">
+								<a href="#">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="targets">
+						<div class="face front">
+							<img src="img2.jpeg" alt="">
+							<h3>Spain</h3>
+						</div>
+						<div class="face back">
+							<h3>Spain</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+							<div class="link">
+								<a href="#">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="targets">
+						<div class="face front">
+							<img src="img3.jpeg" alt="">
+							<h3>Perú</h3>
+						</div>
+						<div class="face back">
+							<h3>Perú</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+							<div class="link">
+								<a href="#">Details</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h1 class="titulos">hospitales destacados</h1>
+				<section class="grid">
+					<div class="card">
+						<img src="img/1.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/2.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/3.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/4.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/5.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/6.png" alt="">
+						<div class="botones">
+							<a href="#" class="boton primario">Comprar</a>
+							<a href="#" class="boton secundario">Ver más</a>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<!-- Inicio de la seccion del footer -->
+        <footer>
+            <div class="contenedor grid">
+                <div class="box__footer">
+                    <div class="logo">
+                        <h1>DoctorApp</h1>
+                    </div>
+                    <div class="terms">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Soluciones</h2>
+                    <a href="https://www.google.com">App Desarrollo</a>
+                    <a href="#">App Marketing</a>
+                    <a href="#">IOS Desarrollo</a>
+                    <a href="#">Android Desarrollo</a>
+                </div>
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Procesos</a>
+                    <a href="#">Servicios</a>              
+                </div>
+            </div>
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2021 <b>DoctorWeb</b></p>
+            </div>
+        </footer>
+        <!-- fin de la seccion del footer -->
+	</label>
+	<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+	<div class="container__modal">
+        <div class="content__modal">
+            <div class="btn_cierre">
+                <label for="evento-click">X</label>
+            </div>
+            <h1 class="title__modal">Para continuar debes iniciar secion!!!!!</h1>
+            <p class="message__modal">Quieres continuar como <a href="#" style="color: blue;">paciente</a> o <a href="#" style="color: red;">Dortor</a>?</p>
+			<p class="message__modal">Aun no tienes una cuenta? has <a href="#" style="color: blue;">click aqui</a> para registrarte como paciente, o has <a href="#" style="color: red;">click aqui</a> para registrarte como doctor</p>
+        </div>
+        <label for="evento-click" class="cerrar__ventana"></label>
+    </div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
